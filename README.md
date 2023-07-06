@@ -6,6 +6,8 @@
 
 This is a C++ embedded library for robotics base on STM32 and intended to provide GNU Makefiles.    
 
+Original from: `https://github.com/HANDS-FREE/OpenRE`
+
 ### [OpenRE Tutorial](http://wiki.hfreetech.org/docs/OpenRE/)
     
 ###  Community: 
@@ -61,7 +63,7 @@ This is a C++ embedded library for robotics base on STM32 and intended to provid
 ### Resources   
   * Download the latest openre code:      
  
- git clone https://github.com/HANDS-FREE/OpenRE      
+ git clone https://github.com/iamchien/OpenRE      
 
 ### OpenRE Toolchain      
    
