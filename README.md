@@ -11,9 +11,9 @@ Original from: `https://github.com/HANDS-FREE/OpenRE`
 ### [OpenRE Tutorial](http://wiki.hfreetech.org/docs/OpenRE/)
     
 ###  Community: 
-* [HandsFree Github](https://github.com/HANDS-FREE)   
-* [HandsFree Website](http://www.zonewander.com/)   
-* [HandsFree Wiki](http://wiki.hfreetech.org/) ,  [Old Version Wiki](http://wiki.handsfree.org.cn/)  
+* [HandsFree Github](https://github.com/HANDS-FREE)
+* [Handsfree Open Source Robot](https://docs.taobotics.com/docs/thunder/pdf/HandsFree_Open_source_robot.pdf)
+* [HandsFree Docs](https://docs.taobotics.com/docs/handsfree/handsfree-en/OpenRE) ,  [Edu Version Docs](https://edu.taobotics.com/wiki/#%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B)
 * Email: hands_free@126.com   
 
 ###  Folder structure
