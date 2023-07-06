@@ -17,46 +17,46 @@ Original from: `https://github.com/HANDS-FREE/OpenRE`
 * Email: hands_free@126.com   
 
 ###  Folder structure
-- ├── **0_Project**   ----  some demos base on this library  
-- │   ├── examples   ----   stm32fxx examples project of openre
-- │   ├── firmware  ----  firmware projects of handsfree robots
-- │   ├── etc..
-- ├── **1_Processor**   --- the board-level abstraction layer ,   support handsfree countrol_unit_v1 , countrol_unit_v2, countrol_unit_mini , stm32f407_discovery     
-- │   ├── BoardAbstract
-- │   ├── board.mk
-- │   ├── Interrupt
-- │   ├── STM32F1
-- │   └── STM32F4
-- │   ├── etc..
-- ├── **2_Package**  ----  this dir include many tool packs . you can use it for moblile robotics, fly control etc..    
-- │   ├── common
-- │   ├── robolink
-- │   ├── imu
-- │   ├── motor
-- │   ├── robot_abstract
-- │   ├── robot_control
-- │   ├── tf
-- │   ├── etc..
-- ├── **3_OS**  : OpenRE support RTOS(ucosII ucosIII nuttx), GUI(STEMWIN) , FATFS   
-- ├── **4_Thirdparty**
-- │   ├── Dobot 
-- │   ├── Eigen3
- -│   ├── libs_include.h
-- │   ├── Matrix
-- │   └── thirdparty.mk
-- ├── **5_Development_Toolchain**
-- ├── **6_Tools**
-- │   ├── env_config.sh
-- │   ├── swd_upload.sh
-- │   ├── tarall.sh
-- │   └── tar.sh
-- ├── **7_Documentation**
-- ├── clean_build_linux.sh
-- ├── clean_build_win.bat
-- ├── HANDS_FREE_OpenRE_F1.pro
-- ├── HANDS_FREE_OpenRE_F4.pro
-- └── README.md
-
+```
+├── 0_Project   ---- some demos base on this library
+    ├── examples   ----  stm32fxx examples project of openre
+    ├── firmware   ----  firmware projects of handsfree robots
+    └── etc...
+├── 1_Processor ---- the board-level abstraction layer, support handsfree countrol_unit_v1, countrol_unit_v2, countrol_unit_mini, stm32f407_discovery
+    ├── BoardAbstract
+    ├── board.mk
+    ├── Interrupt
+    ├── STM32F1
+    ├── STM32F4
+    └── etc...
+├── 2_Package   ---- this dir include many tool packs . you can use it for moblile robotics, fly control etc...
+    ├── common
+    ├── robolink
+    ├── imu
+    ├── motor
+    ├── robot_abstract
+    ├── robot_control
+    ├── tf
+    └── etc...
+├── 3_OS        ---- OpenRE support RTOS(ucosII ucosIII nuttx), GUI(STEMWIN), FATFS
+├── 4_Thirdparty---- Dependency Libraries
+    ├── Dobot
+    ├── Eigen3/libs_include.h
+    ├── Matrix
+    └── thirdparty.mk
+├── 5_Development_Toolchain ---- Packages from HandsFree Aliyun
+├── 6_Tools
+    ├── env_config.sh
+    ├── swd_upload.sh
+    ├── tarall.sh
+    └── tar.sh
+├── 7_Documentation
+├── clean_build_linux.sh
+├── clean_build_win.bat
+├── HANDS_FREE_OpenRE_F1.pro
+├── HANDS_FREE_OpenRE_F4.pro
+└── README.md
+```
 ---
 
 ## Installation
