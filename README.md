@@ -61,18 +61,19 @@ Original from: `https://github.com/HANDS-FREE/OpenRE`
 
 ## Installation
 ### Resources   
-  * Download the latest openre code:      
- 
- git clone https://github.com/iamchien/OpenRE      
+
+```
+* Download the openre code:
+        git clone https://github.com/iamchien/OpenRE
+```
 
 ### OpenRE Toolchain      
    
 #### Method1:  source installation (recommended) 
 
 ```
-$ cd OpenRE & git clone git@github.com:HANDS-FREE/5_Development_Toolchain.git    
-$ cd 5_Development_Toolchain    
-$ sh auto_set_openre.sh   
+$ cd OpenRE/5_Development_Toolchain
+$ bash auto_set_openre_toolchain.sh
 ```
 
 #### Method2:  installation by deb 
