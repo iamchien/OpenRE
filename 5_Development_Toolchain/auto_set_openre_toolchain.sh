@@ -5,7 +5,7 @@ install_command="sudo apt-get install -y"
 
 sudo apt-get remove modemmanager
 
-$install_command libtool libusb-1.0 libftdi-dev python3 python3-serial python3-empy
+$install_command libtool libjaylink-dev libusb-1.0-0-dev libftdi-dev python3 python3-serial python3-empy
 
 arch=$(uname -i)
 if [[ $arch == x86_64* ]]; then
@@ -30,7 +30,7 @@ fi
 
 FILE=./openocd
 if [ ! -d "$FILE" ]; then
-    git clone https://github.com/openocd-org/openocd.git
+    git clone https://github.com/iamchien/openocd.git
 #    wget http://handsfree-mv.oss-cn-shenzhen.aliyuncs.com/handsfree_download/OpenRE_Development_Toolchain/openocd.tar.bz2
 #    tar -jxvf openocd.tar.bz2
 #    rm openocd.tar.bz2
@@ -46,7 +46,7 @@ fi
 
 cd openocd/
 ./bootstrap
-./configure --disable-werror
+./configure --disable-werror --enable-jlink
 make clean
 make
 sudo make install
