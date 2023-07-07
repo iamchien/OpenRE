@@ -4,7 +4,7 @@
 install_command="sudo apt-get install -y"
 
 sudo apt-get remove modemmanager
-$install_command lib32ncurses5-dev libtool libusb-1.0 libftdi-dev python3 python3-serial python3-empy libpython2.7:i386
+$install_command lib32ncurses5-dev libtool libusb-1.0 libftdi-dev python3 python3-serial python3-empy python2.7-dev
 
 FILE=./gcc-arm-none-eabi-5_4-2016q2
 if [ ! -d "$FILE" ]; then
@@ -16,7 +16,6 @@ fi
 
 FILE=./openocd
 if [ ! -d "$FILE" ]; then
-    #https://github.com/openocd-org/openocd.git
     wget http://handsfree-mv.oss-cn-shenzhen.aliyuncs.com/handsfree_download/OpenRE_Development_Toolchain/openocd.tar.bz2
     tar -jxvf openocd.tar.bz2
     rm openocd.tar.bz2
