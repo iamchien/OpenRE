@@ -12,12 +12,14 @@ if [[ $arch == x86_64* ]]; then
     $install_command  lib32ncurses5-dev
 elif [[ $arch == aarch* ]]; then
     $install_command  libncurses5-dev
+fi
 
 deb_arch=$(dpkg-architecture -q DEB_BUILD_ARCH)
 if [[ $arch == amd* ]]; then
-    $install_command  libpython2.7:i386
+    $install_command libpython2.7:i386
 elif [[ $arch == arm* ]]; then
-    $install_command  python2.7-dev
+    $install_command python2.7-dev
+fi
 
 FILE=./gcc-arm-none-eabi-5_4-2016q2
 if [ ! -d "$FILE" ]; then
@@ -25,7 +27,6 @@ if [ ! -d "$FILE" ]; then
     tar -jxvf gcc-arm-none-eabi-5_4-2016q2.tar.bz2
     rm gcc-arm-none-eabi-5_4-2016q2.tar.bz2
 fi
-
 
 FILE=./openocd
 if [ ! -d "$FILE" ]; then
@@ -54,5 +55,5 @@ make clean
 make
 sudo make install
 cd ../
-
-sudo usermod -a -G dialout $USER
+sudo usermod -a -G dialout $USER      
+  
