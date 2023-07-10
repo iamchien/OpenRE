@@ -5,7 +5,7 @@ install_command="sudo apt-get install -y"
 
 sudo apt-get remove modemmanager
 
-$install_command libtool libjaylink-dev libusb-1.0-0-dev libftdi-dev python3 python3-serial python3-empy
+$install_command libtool libjaylink-dev libusb-1.0-0-dev libftdi-dev python3 python3-serial python3-empy sudo gcc-arm-none-eabi
 
 arch=$(uname -i)
 if [[ $arch == x86_64* ]]; then
